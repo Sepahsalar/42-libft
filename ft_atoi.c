@@ -6,7 +6,7 @@
 /*   By: asohrabi <asohrabi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 15:03:14 by asohrabi          #+#    #+#             */
-/*   Updated: 2023/11/03 09:03:23 by asohrabi         ###   ########.fr       */
+/*   Updated: 2023/11/06 12:43:10 by asohrabi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ static int	ft_putnum(const char *str, int sign, int i)
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		a = a * 10 + (str[i] - '0');
-		if (sign * a < 0 && sign == 1)
+		if (a < 0 && sign == 1)
 			return (-1);
-		else if (sign * a > 0 && sign == -1)
+		else if (a < 0 && sign == -1)
 			return (0);
 		i++;
 	}
