@@ -6,7 +6,7 @@
 #    By: asohrabi <asohrabi@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/27 16:56:34 by asohrabi          #+#    #+#              #
-#    Updated: 2023/11/03 09:21:06 by asohrabi         ###   ########.fr        #
+#    Updated: 2023/11/15 10:19:24 by asohrabi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,6 +72,12 @@ all: ${NAME}
 ${NAME}: ${OBJ}	
 	ar -crs ${NAME} ${OBJ}
 
+.bonus: ${NAME} ${OBJ_BONUS}
+	ar -crs ${NAME} ${OBJ_BONUS}
+	touch .bonus
+
+bonus: .bonus
+
 clean:
 	rm -f ${OBJ} ${OBJ_BONUS}
 
@@ -79,8 +85,5 @@ fclean: clean
 	rm -f ${NAME}
 
 re: fclean all
-
-bonus: ${OBJ_BONUS}
-	ar -rus ${NAME} ${OBJ_BONUS}
 
 .PHONY: all, clean, fclean, re, bonus

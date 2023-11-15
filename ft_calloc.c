@@ -6,7 +6,7 @@
 /*   By: asohrabi <asohrabi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 15:42:44 by asohrabi          #+#    #+#             */
-/*   Updated: 2023/11/03 13:33:20 by asohrabi         ###   ########.fr       */
+/*   Updated: 2023/11/15 10:14:16 by asohrabi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t	max_size;
 
 	max_size = 4611686014132420608;
-	// if (count == 0 || size == 0)
-	// 	return (ft_calloc(1, 1));
+	if (count == 0 || size == 0)
+		return (ft_calloc(1, 1));
 	if (count != 0 && size != 0 && max_size / count < size)
 		return ((void *)0);
 	p = (void *)malloc(count * size * sizeof(void));
