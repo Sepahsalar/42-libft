@@ -1,6 +1,6 @@
 # 42-libft
 <<<<<<< HEAD
-Get next line project from 42.fr curriculum
+Libft project from 42.fr curriculum
 
 =======
 Libft project from 42.fr curriculum
