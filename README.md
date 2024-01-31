@@ -98,11 +98,11 @@ The header file is useful for 2 things:
 
 ### Linked-list functions
 
-- [`ft_lstnew`](ft_lstnew.c): Create a new list element.
-- [`ft_lstadd_front`](ft_lstadd_front.c): Add an element at the beginning of a list.
-- [`ft_lstsize`](ft_lstsize.c): Count the number of elements in a list.
-- [`ft_lstlast`](ft_lstlast.c): Return the last element of the list.
-- [`ft_lstadd_back`](ft_lstadd_back.c): Add an element at the end of a list.
-- [`ft_lstclear`](ft_lstclear.c): Delete and free list.
-- [`ft_lstiter`](ft_lstiter.c): Apply a function to each element of a list.
-- [`ft_lstmap`](ft_lstmap.c): Apply a function to each element of a list.
+- [`ft_lstnew`](ft_lstnew_bonus.c): Create a new list element.
+- [`ft_lstadd_front`](ft_lstadd_front_bonus.c): Add an element at the beginning of a list.
+- [`ft_lstsize`](ft_lstsize_bonus.c): Count the number of elements in a list.
+- [`ft_lstlast`](ft_lstlast_bonus.c): Return the last element of the list.
+- [`ft_lstadd_back`](ft_lstadd_back_bonus.c): Add an element at the end of a list.
+- [`ft_lstclear`](ft_lstclear_bonus.c): Delete and free list.
+- [`ft_lstiter`](ft_lstiter_bonus.c): Apply a function to each element of a list.
+- [`ft_lstmap`](ft_lstmap_bonus.c): Apply a function to each element of a list.
